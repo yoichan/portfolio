@@ -19,7 +19,7 @@ body::before {
     z-index:-10;
     width:100%;
     height:100vh;
-    background:url("../images/shirakami.jpeg") no-repeat center;
+    background:url("../images/shirakami_sp.jpg") no-repeat center;
     background-size:cover;
 }
 
@@ -89,9 +89,8 @@ header p {
 .exhibit .frame {
     width: 100%;
     height: 200px;
-    display: flex;
-    align-items: center;
     background-color: #F6F6F6;
+    display: flex;
 }
 
 .exhibit .frame img {
@@ -109,7 +108,7 @@ header p {
 }
 
 .item {
-    max-width: 250px;
+    width: 250px;
     margin: auto;
     margin-top: 70px;
 }
@@ -117,3 +116,17 @@ header p {
  footer {
      padding: 33px;
  }
+
+ @media screen and (min-width: 560px) {
+    body::before { 
+        background:url("../images/shirakami.jpeg") no-repeat center;
+    }
+    .items {
+        max-width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+ }
+
+ @media screen and (min-width: 960px) {
+}
