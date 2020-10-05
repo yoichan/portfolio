@@ -160,12 +160,13 @@ div.modal__content {
 
 
 .modal__content .detail_item {
-    display: flex;
     text-align: left;
 }
 
 .modal__content .item_name {
-    width: 120px;
+    font-size: 10px;
+    margin-bottom: 0;
+
 }
 
 .modal__content .item_name::after {
@@ -173,7 +174,7 @@ div.modal__content {
 }
 
 .modal__content p {
-    margin: 3px 0;
+    margin: 0;
 }
 
 .modal__content img {
@@ -237,6 +238,21 @@ div.modal__content {
     .item {
         margin-top: 65px;
     }
+
+    .modal__content .detail_item {
+        display: flex;
+        text-align: left;
+    }
+
+    .modal__content .item_name {
+        font-size: 12px;
+        width: 80px;
+    }
+
+    .modal__content p {
+        margin: 3px 0;
+    }
+
  }
 
  @media screen and (min-width: 960px) {
