@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive_modal_design.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 
@@ -26,32 +26,23 @@
             <p>Engineer / Designer / Coder</p>
         </header>
 
-
-        <div class="demo-btns">
-            <header>
-                <h1>Material Design Modals</h1>
-            </header>
-
-            <div class="info">
-                <div class="buttons">
-                    <p>
-                    </p>
-                </div>
-                <p>Click a button to activate a modal.</p>
-            </div>
-        </div>
-
         <!-- Modal -->
         <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
             <div class="modal__dialog">
                 <div class="modal__content">
-                    <h1>Modal</h1>
-                    <p>Church-key American Apparel trust fund, cardigan mlkshk small batch Godard mustache pickled
-                        bespoke meh
-                        seitan. Wes Anderson farm-to-table vegan, kitsch Carles 8-bit gastropub paleo YOLO jean shorts
-                        health
-                        goth lo-fi. Normcore chambray locavore Banksy, YOLO meditation master cleanse readymade
-                        Bushwick.</p>
+                    <div class="detail_item">
+                        <p class="item_name">Title</p>
+                        <p>ネット宝石店のバナー</p>
+                    </div>
+                    <div class="detail_item">
+                        <p class="item_name">Skills</p>
+                        <p>Photoshop</p>
+                    </div>
+                    <div class="detail_item">
+                        <p class="item_name">Description</p>
+                        <p>透明感が出るように意識しました</p>
+                    </div>
+                    <img src="images/banner_toumeikan.jpg" alt="">
 
                     <!-- modal close button -->
                     <a href="" class="modal__close demo-close">
@@ -65,20 +56,17 @@
             </div>
         </div>
 
-
-
-
-
         <h2 id="header_works">Works</h2>
         <div class="section">
             <h3>Designing</h3>
             <div class="items">
                 <div class="exhibit item">
                     <div class="frame">
-                        <img src="images/banner_toumeikan.jpg" alt="ネット宝石店のバナー">
+                        <a href="" data-modal="#modal" class="modal__trigger">
+                            <img src="images/banner_toumeikan.jpg" alt="ネット宝石店のバナー">
+                        </a>
                     </div>
-                    <a href="">架空のネット宝石店のバナー</a>
-                    <a href="" data-modal="#modal" class="modal__trigger">Modal 1</a>
+                    <p>架空のネット宝石店のバナー</p>
                 </div>
                 <div class="exhibit item">
                     <div class="frame">
