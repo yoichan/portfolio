@@ -1,4 +1,4 @@
-
+/*https://codepen.io/ettrics/pen/Jdjdzp */
 $(function () {
 
     var Modal = (function () {
