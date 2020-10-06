@@ -53,8 +53,7 @@ header h1, header p {
 
 header h1 {
     font-size: 30px;
-    padding: 7px;
-    padding-top: 16px;
+    padding: 16px 0 0;
     margin-bottom: 0;
 }
 
@@ -95,6 +94,7 @@ h3 {
     line-height: 1.5;
     border-bottom: solid 1px #3D3D3D;
     margin-top: 70px;
+    margin-bottom: 0;
 }
 
 
@@ -113,6 +113,7 @@ h3 {
     width: 100%;
     height: 200px;
     display: flex;
+    border: solid #E0E0E0 1px;
 }
 
 .exhibit .frame img {
@@ -121,6 +122,14 @@ h3 {
     margin: auto;
     border: solid 1px;
     border-color: #E0E0E0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+.exhibit .frame img:hover {
+    filter: brightness(70%);
 }
 
 .exhibit p {
@@ -179,6 +188,29 @@ div.modal__content {
 
 .modal__content img {
     margin-top: 50px;
+    max-width: 300px;
+}
+
+.modal__content .topic .title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.modal__content .topic .title::before,  .modal__content .topic .title::after{
+    content: '';
+    display: inline-block;
+    flex-grow: 1;
+    height: 1px;
+    background: #E0E0E0;
+    margin: 0 30px;
+}
+
+.modal__content .topic p {
+    margin: auto;
+    text-align: left;
 }
 
 /* ↑responsive_modal_designの上書き */
@@ -196,8 +228,7 @@ div.modal__content {
     header h1 {
        font-size: 40px;
        font-weight: 400;
-       padding: 20px;
-       padding-top: 54px;
+       padding: 54px 0 0 0;
     }
 
     header p {
@@ -251,6 +282,7 @@ div.modal__content {
 
     .modal__content p {
         margin: 3px 0;
+        width: 80%;
     }
 
  }
