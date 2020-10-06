@@ -81,7 +81,8 @@
         {
             "title": "買い物リストアプリAremo",
             "skills": [
-                "Flutter"
+                "Flutter",
+                "Firebase"
             ],
             "description": "普段の生活から出てきたアイディアを形にしました。設計から開発までを夫婦で行いました。",
             "image_path": "images/aremo_lp.jpg",
@@ -125,13 +126,12 @@
     [
         {
             "title": "子どもたちが将来力を発揮するために〜私達にできること〜",
-            "skills": [ "-"
+            "skills": [
+                "-"
             ],
             "description": "シン・ニホンを読んで、急激に変化していく社会を行きてゆく子どもたちに、私達は何ができるのか、自分なりの考えをまとめたスライドを作りました",
             "image_path": "images/kodomo.jpg",
             "image_alt": "スライドのタイトルの図"
         }
     ]
-
-
 ]
