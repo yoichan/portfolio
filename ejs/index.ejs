@@ -1,3 +1,8 @@
+<%
+var designExhibits = exhibitData[0];
+var engineerExhibits = exhibitData[1];
+var otherExhibits = exhibitData[2];
+%>
 <!doctype html>
 <html lang="ja">
 
@@ -26,98 +31,66 @@
             <p>Engineer / Designer / Coder</p>
         </header>
 
-        <%- include('./_modal'); %>
 
         <h2 id="header_works">Works</h2>
         <div class="section">
+
             <h3>Designing</h3>
             <div class="items">
+
+                <%for (let i = 0; i < designExhibits.length; i++) { %>
+                <% var modal_id = "design_" + i %>
+
                 <div class="exhibit item">
                     <div class="frame">
-                        <a href="" data-modal="#modal" class="modal__trigger">
-                            <img src="images/banner_toumeikan.jpg" alt="ネット宝石店のバナー">
+                        <a href="" data-modal="#<%- modal_id %>" class="modal__trigger">
+                            <img src="<%- designExhibits[i].image_path %>" alt="<%- designExhibits[i].image_alt %>">
                         </a>
                     </div>
-                    <p>架空のネット宝石店のバナー</p>
+                    <p><%- designExhibits[i].title %></p>
                 </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/banner_monney.jpg" alt="マネーセミナーの広告バナー">
-                    </div>
-                    <p>マネーセミナーの広告バナー</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/banner_shukatu.jpg" alt="終活サービスの広告バナー">
-                    </div>
-                    <p>終活サービスの広告バナー</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/banner_aremo.jpg" alt="買い物リストアプリの広告バナー">
-                    </div>
-                    <p>買い物リストアプリの広告バナー</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/banner_company_top.jpg" alt="HPトップバナー">
-                    </div>
-                    <p>架空の会社のHPトップバナー</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/aremo_lp.jpg" alt="買い物リストアプリAremoのLP">
-                    </div>
-                    <p>買い物リストアプリ「Aremo」のLP</p>
-                </div>
+
+                <%- include('./_modal', {modal_id: modal_id, exhibit: designExhibits[i]}); %>
+                <% } %>
             </div>
+
             <h3>Engineering</h3>
             <div class="items">
+
+                <%for (let i = 0; i < engineerExhibits.length; i++) { %>
+                <% var modal_id = "engineer_" + i %>
+
                 <div class="exhibit item">
                     <div class="frame">
-                        <img src="images/kyotoshibori.jpg" alt="京都美京ホームページのサムネイル">
+                        <a href="" data-modal="#<%- modal_id %>" class="modal__trigger">
+                            <img src="<%- engineerExhibits[i].image_path %>" alt="<%- engineerExhibits[i].image_alt %>">
+                        </a>
                     </div>
-                    <p>京都美京様ホームページ</p>
+                    <p><%- engineerExhibits[i].title %></p>
                 </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/iimori.png" alt="飯盛建設ホームページのサムネイル">
-                    </div>
-                    <p>飯盛建設様ホームページ</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/aremo_lp.jpg" alt="買い物リストアプリAremoのLP">
-                    </div>
-                    <p>買い物リストアプリAremo</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/factory.jpg" alt="工場の写真">
-                    </div>
-                    <p>医療機器メーカーで社内SEとして勤務</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/web_develop.jpg" alt="PCを操作している写真">
-                    </div>
-                    <p>Web系受託企業でITエンジニアとして勤務</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/affi.jpg" alt="アフィリエイトの図">
-                    </div>
-                    <p>ネット広告企業でITエンジニアとして勤務</p>
-                </div>
+
+                <%- include('./_modal', {modal_id: modal_id, exhibit: engineerExhibits[i]}); %>
+                <% } %>
+
             </div>
             <h3>Others</h3>
             <div class="items">
+
+                <%for (let i = 0; i < otherExhibits.length; i++) { %>
+                <% var modal_id = "other_" + i %>
+
                 <div class="exhibit item">
                     <div class="frame">
-                        <img src="images/kodomo.jpg" alt="スライドのスクリーンショット">
+                        <a href="" data-modal="#<%- modal_id %>" class="modal__trigger">
+                            <img src="<%- otherExhibits[i].image_path %>" alt="<%- otherExhibits[i].image_alt %>">
+                        </a>
                     </div>
-                    <p>子どもたちが将来力を発揮するために〜私達にできること〜</p>
+                    <p><%- otherExhibits[i].title %></p>
                 </div>
+
+                <%- include('./_modal', {modal_id: modal_id, exhibit: otherExhibits[i]}); %>
+                <% } %>
+
             </div>
         </div>
         <h2 id="header_about">About</h2>

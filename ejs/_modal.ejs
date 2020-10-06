@@ -1,20 +1,20 @@
 <!-- Modal -->
-<div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+<div id="<%- modal_id %>" class="modal modal__bg" role="dialog" aria-hidden="true">
     <div class="modal__dialog">
         <div class="modal__content">
             <div class="detail_item">
                 <p class="item_name">Title</p>
-                <p>ネット宝石店のバナー</p>
+                <p><%- exhibit.title %></p>
             </div>
             <div class="detail_item">
                 <p class="item_name">Skills</p>
-                <p>Photoshop</p>
+                <p><%- exhibit.skills.join(", ") %></p>
             </div>
             <div class="detail_item">
                 <p class="item_name">Description</p>
-                <p>透明感が出るように意識しました</p>
+                <p><%- exhibit.description %></p>
             </div>
-            <img src="images/banner_toumeikan.jpg" alt="">
+            <img src="<%- exhibit.image_path %>" alt="<%- exhibit.image_alt %>">
 
             <!-- modal close button -->
             <a href="" class="modal__close demo-close">
