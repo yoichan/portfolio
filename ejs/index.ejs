@@ -2,6 +2,7 @@
 var designExhibits = exhibitData[0];
 var engineerExhibits = exhibitData[1];
 var otherExhibits = exhibitData[2];
+var topics = exhibitData[3];
 %>
 <!doctype html>
 <html lang="ja">
@@ -97,24 +98,23 @@ var otherExhibits = exhibitData[2];
         <div class="section">
             <h3>Topics</h3>
             <div class="items">
+
+                <%for (let i = 0; i < topics.length; i++) { %>
+                <% var modal_id = "topic_" + i %>
+
                 <div class="exhibit item">
                     <div class="frame">
-                        <img src="images/nature.jpg" alt="発芽する様子の写真">
+                        <a href="" data-modal="#<%- modal_id %>" class="modal__trigger">
+                            <img src="<%- topics[i].image_path %>" alt="<%- topics[i].image_alt %>">
+                        </a>
                     </div>
-                    <p>Nature</p>
+                    <p><%- topics[i].title %></p>
                 </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/mom.jpg" alt="赤ちゃんの手の写真">
-                    </div>
-                    <p>Mom</p>
-                </div>
-                <div class="exhibit item">
-                    <div class="frame">
-                        <img src="images/work_and_life.jpg" alt="ワークアンドライフの写真">
-                    </div>
-                    <p>Life & Work</p>
-                </div>
+
+                <%- include('./_modal_topic', {modal_id: modal_id, exhibit: topics[i]}); %>
+
+                <% } %>
+
             </div>
             <h3>Tweets</h3>
             <div class="item">

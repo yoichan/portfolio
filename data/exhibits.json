@@ -133,5 +133,26 @@
             "image_path": "images/kodomo.jpg",
             "image_alt": "スライドのタイトルの図"
         }
+    ],
+    [
+        {
+            "title": "Nature",
+            "description": "幼少期は、福島県の雄大な自然に囲まれて育ちました。ときに優しく、ときに厳しく、ときに恐ろしく、様々な表情を見せる自然。そんな自然がつくりだす、洗練された色や形や線にいつも憧れています。",
+            "image_path": "images/nature.jpg",
+            "image_alt": "新芽が息吹く様子の写真"
+        },
+        {
+            "title": "Mom",
+            "description": "2歳児の母親をしています。子育ては新しい発見の毎日、そして忍耐の毎日...",
+            "image_path": "images/mom.jpg",
+            "image_alt": "赤ちゃんとお母さんの手の写真"
+        },
+        {
+            "title": "Life & Work",
+            "description": "母親をしている自分、仕事をしている自分、自分自身でありたい自分。バランスを取るのに四苦八苦。より良いバランスを模索中です。",
+            "image_path": "images/work_and_life.jpg",
+            "image_alt": "ワークアンドライフの写真"
+        }
     ]
+
 ]
