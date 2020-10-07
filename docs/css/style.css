@@ -271,9 +271,16 @@ div.modal__content {
         margin-top: 65px;
     }
 
+    .access {
+        display: flex;
+        justify-content: space-around;
+        max-width: 700px;
+        margin: auto;
+    }
+
     .modal__content .detail_item {
         display: flex;
-        text-align: left;
+        justify-content: space-around;
     }
 
     .modal__content .item_name {
