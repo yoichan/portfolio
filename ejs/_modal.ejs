@@ -2,6 +2,7 @@
 <div id="<%- modal_id %>" class="modal modal__bg" role="dialog" aria-hidden="true">
     <div class="modal__dialog">
         <div class="modal__content">
+            <img src="<%- exhibit.image_path %>" alt="<%- exhibit.image_alt %>">
             <div class="detail_item">
                 <p class="item_name">Title</p>
                 <p><%- exhibit.title %></p>
@@ -14,7 +15,6 @@
                 <p class="item_name">Description</p>
                 <p><%- exhibit.description %></p>
             </div>
-            <img src="<%- exhibit.image_path %>" alt="<%- exhibit.image_alt %>">
 
             <!-- modal close button -->
             <a href="" class="modal__close demo-close">
