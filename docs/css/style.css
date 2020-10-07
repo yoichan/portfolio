@@ -282,12 +282,12 @@ div.modal__content {
         justify-content: space-around;
     }
 
-    .modal__content .item_name {
+    .modal__content .detail_item .item_name {
         font-size: 12px;
         width: 80px;
     }
 
-    .modal__content p {
+    .modal__content .detail_item p, .modal__content .detail_item a {
         margin: 3px 0;
         width: 80%;
     }
