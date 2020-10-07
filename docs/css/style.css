@@ -71,6 +71,7 @@ h2 {
 
 h2 span {
     z-index: 1;
+    position: relative;
 }
 
 #header_about::before {
