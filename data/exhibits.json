@@ -54,6 +54,7 @@
                 "CSS",
                 "VSCode"
             ],
+            "link": "https://aremo-app.web.app",
             "description": "デザインからコーディングまでを行いました。トップバナーは実際に使っているシーンのイメージが湧くような画像にし、特徴の部分はわかりやすくなるように画像を作成して使用しました。",
             "image_path": "images/aremo_lp.jpg",
             "image_alt": "買い物リストアプリ「Aremo」のLPのトップ画像"
@@ -65,6 +66,7 @@
             "skills": [
                 "WordPress"
             ],
+            "link": "https://kyoto-shibori.com/",
             "description": "ホームページの構築を担当しています。既存のサーバに新規にWordPressを導入し、デザインを当て込みました。",
             "image_path": "images/kyotoshibori.jpg",
             "image_alt": "京都絞美京ホームページのトップ画像"
@@ -74,6 +76,7 @@
             "skills": [
                 "WordPress"
             ],
+            "link": "https://iimorikensetsu.com/",
             "description": "サーバの選定からホームページの構築までを行いました。",
             "image_path": "images/iimori.png",
             "image_alt": "飯盛建設ホームページのトップ画像"
