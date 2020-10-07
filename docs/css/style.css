@@ -69,6 +69,10 @@ h2 {
     position: relative;
 }
 
+h2 span {
+    z-index: 1;
+}
+
 #header_about::before {
     content: "About";
 }
@@ -84,7 +88,7 @@ h2::before {
     left: 0;
     right: 0;
     top: -40px;
-    z-index: -1;
+    z-index: 0;
 }
 
 h3 {
