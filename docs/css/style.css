@@ -67,7 +67,6 @@ h2 {
     font-weight: 300;
     margin: 50vh 0;
     position: relative;
-    z-index: 1;
 }
 
 #header_about::before {
@@ -85,7 +84,7 @@ h2::before {
     left: 0;
     right: 0;
     top: -40px;
-    z-index: 0;
+    z-index: -1;
 }
 
 h3 {
@@ -249,16 +248,11 @@ div.modal__content {
 
     h2 {
         font-size: 43px;
-        font-weight: 300;
     }
 
     h2::before {
         font-size: 15vw;
-        position: absolute;
-        left: 0;
-        right: 0;
         top: -10vw;
-        z-index: -1;
     }
 
     h3 {
