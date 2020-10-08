@@ -1,25 +1,28 @@
 <!-- Modal -->
 <div id="<%- modal_id %>" style="display:none;">
 
-    <img src="<%- exhibit.image_path %>" alt="<%- exhibit.image_alt %>">
-    <div class="detail_item">
-        <p class="item_name">Title</p>
-        <p><%- exhibit.title %></p>
-    </div>
-    <div class="detail_item">
-        <p class="item_name">Skills</p>
-        <p><%- exhibit.skills.join(", ") %></p>
-    </div>
-    <% if (typeof exhibit.link !== 'undefined') { %>
-    <div class="detail_item">
-        <p class="item_name">Link</p>
-        <a target="_blank" rel="noopener noreferrer" href="<%- exhibit.link %>"><%- exhibit.link %></a>
-    </div>
-    <% } %>
+    <div class="modal_content">
+        <img src="<%- exhibit.image_path %>" alt="<%- exhibit.image_alt %>">
+        <div class="detail_item">
+            <p class="item_name">Title</p>
+            <p><%- exhibit.title %></p>
+        </div>
+        <% if (typeof exhibit.link !== 'undefined') { %>
+        <div class="detail_item">
+            <p class="item_name">Link</p>
+            <a target="_blank" rel="noopener noreferrer" href="<%- exhibit.link %>"><%- exhibit.link %></a>
+        </div>
+        <% } %>
+        <div class="detail_item">
+            <p class="item_name">Skills</p>
+            <p><%- exhibit.skills.join(", ") %></p>
+        </div>
+        <div class="detail_item">
+            <p class="item_name">Description</p>
+            <p><%- exhibit.description %></p>
+        </div>
 
-    <div class="detail_item">
-        <p class="item_name">Description</p>
-        <p><%- exhibit.description %></p>
+
     </div>
 
 </div>

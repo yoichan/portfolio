@@ -149,55 +149,47 @@ h3 {
     line-height: 1.5;
 }
 
-/* ↓responsive_modal_designの上書き */
+ footer {
+     padding: 33px;
+     font-size: 12px;
+ }
 
-a.modal__trigger {
-    padding: 0;
-    background-color: transparent;
-    box-shadow: none;
-    margin: auto;
-    cursor: pointer;
+
+/*******
+* モーダルの設定
+*******/
+
+.modal_content {
+    text-align: center;
 }
 
-a.modal__trigger:hover {
-    background-color: transparent;
-}
-
-div.modal__content {
-    background-color: white;
-}
-
-#modal__temp {
-    background-color: white;
-}
-
-
-.modal__content .detail_item {
+.modal_content .detail_item {
     text-align: left;
 }
 
-.modal__content .item_name {
+.modal_content .item_name {
     font-size: 10px;
     margin-bottom: 0;
 
 }
 
-.modal__content .item_name::after {
+.modal_content .item_name::after {
     content: ":";
 }
 
-.modal__content p {
+.modal_content p {
     margin: 0;
     line-height: 2.0;
 }
 
-.modal__content img {
+.modal_content img {
     margin: 30px 0;
     border: solid #E0E0E0 1px;
     padding: 5px;
+    max-width: 100%;
 }
 
-.modal__content .topic .title {
+.modal_content .topic .title {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -205,7 +197,7 @@ div.modal__content {
     align-items: center;
 }
 
-.modal__content .topic .title::before,  .modal__content .topic .title::after{
+.modal_content .topic .title::before,  .modal_content .topic .title::after{
     content: '';
     display: inline-block;
     flex-grow: 1;
@@ -214,90 +206,83 @@ div.modal__content {
     margin: 0 30px;
 }
 
-.modal__content .topic p {
+.modal_content .topic p {
     margin: auto;
     text-align: left;
 }
 
-/* ↑responsive_modal_designの上書き */
 
- footer {
-     padding: 33px;
-     font-size: 12px;
- }
+@media screen and (min-width: 560px) {
+   body, html {
+      font-size: 16px;
+   }
 
- @media screen and (min-width: 560px) {
-    body, html {
-       font-size: 16px;
-    }
+   header h1 {
+      font-size: 40px;
+      font-weight: 400;
+      padding: 54px 0 0 0;
+   }
 
-    header h1 {
-       font-size: 40px;
-       font-weight: 400;
-       padding: 54px 0 0 0;
-    }
+   header p {
+       font-size: 20px;
+       padding-bottom: 54px;
+   }
 
-    header p {
-        font-size: 20px;
-        padding-bottom: 54px;
-    }
+   body::before { 
+       background:url("../images/shirakami.jpg") no-repeat center;
+   }
+   .items {
+       max-width: 900px;
+       display: flex;
+       flex-wrap: wrap;
+       margin: auto;
+   }
 
-    body::before { 
-        background:url("../images/shirakami.jpg") no-repeat center;
-    }
-    .items {
-        max-width: 900px;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-    }
+   h2 {
+       font-size: 43px;
+   }
 
-    h2 {
-        font-size: 43px;
-    }
+   h2::before {
+       font-size: 15vw;
+       top: -10vw;
+   }
 
-    h2::before {
-        font-size: 15vw;
-        top: -10vw;
-    }
+   h3 {
+       font-size: 30px;
+       margin-top: 100px;
+       font-weight: 300;
+   }
 
-    h3 {
-        font-size: 30px;
-        margin-top: 100px;
-        font-weight: 300;
-    }
+   .item {
+       margin-top: 65px;
+   }
 
-    .item {
-        margin-top: 65px;
-    }
+   .access {
+       display: flex;
+       justify-content: space-around;
+       max-width: 700px;
+       margin: auto;
+   }
 
-    .access {
-        display: flex;
-        justify-content: space-around;
-        max-width: 700px;
-        margin: auto;
-    }
+   .modal_content {
+       max-width: 666px;
+       margin: auto;
+   }
+   .modal_content .detail_item {
+       display: flex;
+       justify-content: space-around;
+   }
 
-    .modal__content .detail_item {
-        display: flex;
-        justify-content: space-around;
-    }
+   .modal_content .detail_item .item_name {
+       font-size: 12px;
+       width: 80px;
+   }
 
-    .modal__content .detail_item .item_name {
-        font-size: 12px;
-        width: 80px;
-    }
+   .modal_content .detail_item p, .modal_content .detail_item a {
+       margin: 3px 0;
+       width: 80%;
+   }
+}
 
-    .modal__content .detail_item p, .modal__content .detail_item a {
-        margin: 3px 0;
-        width: 80%;
-    }
-
-    .modal__content img {
-        max-width: 300px;
-    }
-
- }
-
- @media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
 }
