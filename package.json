@@ -30,6 +30,7 @@
     "lodash": ">=4.17.19"
   },
   "dependencies": {
-    "gulp-html-beautify": "^1.0.1"
+    "gulp-html-beautify": "^1.0.1",
+    "modaal": "^0.4.4"
   }
 }

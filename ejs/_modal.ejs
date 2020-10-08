@@ -1,36 +1,25 @@
 <!-- Modal -->
-<div id="<%- modal_id %>" class="modal modal__bg" role="dialog" aria-hidden="true">
-    <div class="modal__dialog">
-        <div class="modal__content">
-            <img src="<%- exhibit.image_path %>" alt="<%- exhibit.image_alt %>">
-            <div class="detail_item">
-                <p class="item_name">Title</p>
-                <p><%- exhibit.title %></p>
-            </div>
-            <div class="detail_item">
-                <p class="item_name">Skills</p>
-                <p><%- exhibit.skills.join(", ") %></p>
-            </div>
-            <% if (typeof exhibit.link !== 'undefined') { %>
-            <div class="detail_item">
-                <p class="item_name">Link</p>
-                <a target="_blank" rel="noopener noreferrer" href="<%- exhibit.link %>"><%- exhibit.link %></a>
-            </div>
-            <% } %>
+<div id="<%- modal_id %>" style="display:none;">
 
-            <div class="detail_item">
-                <p class="item_name">Description</p>
-                <p><%- exhibit.description %></p>
-            </div>
-
-            <!-- modal close button -->
-            <a href="" class="modal__close demo-close">
-                <svg class="" viewBox="0 0 24 24">
-                    <path
-                        d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
-                    <path d="M0 0h24v24h-24z" fill="none" /></svg>
-            </a>
-
-        </div>
+    <img src="<%- exhibit.image_path %>" alt="<%- exhibit.image_alt %>">
+    <div class="detail_item">
+        <p class="item_name">Title</p>
+        <p><%- exhibit.title %></p>
     </div>
+    <div class="detail_item">
+        <p class="item_name">Skills</p>
+        <p><%- exhibit.skills.join(", ") %></p>
+    </div>
+    <% if (typeof exhibit.link !== 'undefined') { %>
+    <div class="detail_item">
+        <p class="item_name">Link</p>
+        <a target="_blank" rel="noopener noreferrer" href="<%- exhibit.link %>"><%- exhibit.link %></a>
+    </div>
+    <% } %>
+
+    <div class="detail_item">
+        <p class="item_name">Description</p>
+        <p><%- exhibit.description %></p>
+    </div>
+
 </div>
