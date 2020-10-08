@@ -27,14 +27,23 @@ var topics = exhibitData[3];
 
 <body>
     <div class="content">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Top</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
         <!-- 本文 -->
         <header>
             <h1>Yayoi Ito</h1>
             <p>Engineer / Designer / Coder</p>
         </header>
 
-
-        <h2 id="header_works"><span>Works</span></h2>
+        <div id="works"></div>
+        <h2 id="works_header"><span>Works</span></h2>
         <div class="section">
 
             <h3>Designing</h3>
@@ -95,7 +104,8 @@ var topics = exhibitData[3];
 
             </div>
         </div>
-        <h2 id="header_about"><span>About</span></h2>
+        <div id="about"></div>
+        <h2 id="about_header"><span>About</span></h2>
         <div class="section">
             <h3>Topics</h3>
             <div class="items">
@@ -127,7 +137,7 @@ var topics = exhibitData[3];
                     </div>
                 </div>
                 <div>
-                    <h3>Contact</h3>
+                    <h3 id="contact">Contact</h3>
                     <div class="item">
                         ご連絡はこちらへお願いします。<br>
                         <a href="mailto:yayoi.t.ito@gmail.com">yayoi.t.ito@gmail.com</a>
