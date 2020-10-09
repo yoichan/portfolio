@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "gulp-html-beautify": "^1.0.1",
-    "modaal": "^0.4.4"
+    "modaal": "^0.4.4",
+    "smooth-scroll": "^16.1.3"
   }
 }
