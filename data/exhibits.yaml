@@ -1,24 +1,24 @@
 ---
   - 
     - 
-      title: "架空のネット宝石店のバナー制作"
+      title: "ネット宝石店のバナー制作"
       skills: 
         - "Photoshop"
-      description: "透明感が出るように意識しました"
+      description: "宝石の透明感が出るように意識しました"
       image_path: "images/banner_toumeikan.jpg"
-      image_alt: "架空のネット宝石店のバナー画像"
+      image_alt: "ネット宝石店のバナー画像"
     - 
-      title: "架空のマネーセミナーの広告バナー制作"
+      title: "女性限定マネーセミナーの広告バナー制作"
       skills: 
         - "Photoshop"
       description: "女性でも安心感がもてるような雰囲気が出るようにしました"
       image_path: "images/banner_monney.jpg"
-      image_alt: "マネーセミナーの広告バナーの画像"
+      image_alt: "女性限定マネーセミナーの広告バナーの画像"
     - 
-      title: "架空の終活サービスの広告バナー制作"
+      title: "終活サービスの広告バナー制作"
       skills: 
         - "Photoshop"
-      description: "終活ターゲットの子供世代に刺さるようポップな仕上がりにしました"
+      description: "終活ターゲットの子供世代をターゲットにおき、20から30代にさるようポップな仕上がりにしました"
       image_path: "images/banner_shukatu.jpg"
       image_alt: "終活サービスの広告バナー画像"
     - 
@@ -29,12 +29,12 @@
       image_path: "images/banner_aremo.jpg"
       image_alt: "買い物リストアプリの広告バナー画像"
     - 
-      title: "架空の会社のHPトップバナー制作"
+      title: "マーケティング会社のHPトップバナー制作"
       skills: 
         - "Photoshop"
-      description: "知的で先進的な仕上がりにしました"
+      description: "BtoBのサイト用に知的で先進的な仕上がりにしました"
       image_path: "images/banner_company_top.jpg"
-      image_alt: "架空の会社のHPトップバナー画像"
+      image_alt: "マーケティング会社のHPトップバナー画像"
     - 
       title: "買い物リストアプリ「Aremo」のLP制作"
       skills: 
@@ -44,7 +44,8 @@
         - "CSS"
         - "VSCode"
       link: "https://aremo-app.web.app"
-      description: "デザインからコーディングまでを行いました。トップバナーは実際に使っているシーンのイメージが湧くような画像にし、特徴の部分はわかりやすくなるように画像を作成して使用しました。"
+      description: "デザインからコーディングまでを行いました。トップバナーは実際に使っているシーンのイメージが湧くような画像にしました。
+      内容はわかりやすいようキャプチャーを使用した画像をつくり使用しました。"
       image_path: "images/aremo_lp.jpg"
       image_alt: "買い物リストアプリ「Aremo」のLPのトップ画像"
   - 
@@ -53,7 +54,7 @@
       skills: 
         - "WordPress"
       link: "https://kyoto-shibori.com/"
-      description: "ホームページの構築を担当しています。既存のサーバに新規にWordPressを導入し、デザインを当て込みました。"
+      description: "ホームページの構築を担当しました。既存のサーバに新規にWordPressを導入し、デザインを当て込みました。"
       image_path: "images/kyotoshibori.jpg"
       image_alt: "京都絞美京ホームページのトップ画像"
     - 
@@ -68,9 +69,9 @@
       title: "買い物リストアプリAremo"
       skills: 
         - "Flutter"
-        - "Firebase"
+        - "Cloud Firestore"
       link: "https://aremo-app.web.app"
-      description: "普段の生活から出てきたアイディアを形にしました。設計から開発までを夫婦で行いました。"
+      description: "普段の生活から出てきたアイディアを形にしました。設計から開発までを夫婦で行いました。近日リリース予定です。"
       image_path: "images/aremo_lp.jpg"
       image_alt: "買い物リストアプリ「Aremo」のLP画像"
     - 
@@ -80,7 +81,7 @@
         - "SQLServer"
         - "VBA"
         - "他"
-      description: "4年間、医療機器メーカーの工場で、製造ラインの改善のためのオープン系システム開発を行っていました。設計から開発導入保守まですべて担当していました。"
+      description: "4年間、医療機器メーカーの工場で、製造ラインの改善のためのオープン系システム開発を行っていました。"
       image_path: "images/factory.jpg"
       image_alt: "工場内の製造ラインの写真"
     - 
@@ -98,7 +99,7 @@
         - "PHP"
         - "AWS"
         - "mySQL"
-      description: "3年間、ネット広告企業で広告配信システムの運用保守を行っていました。追加開発は設計から導入までを担当していました。"
+      description: "3年間、ネット広告企業で広告配信システムの開発運用保守を行っていました。"
       image_path: "images/affi.jpg"
       image_alt: "アフィリエイトの図"
   - 
@@ -106,23 +107,28 @@
       title: "子どもたちが将来力を発揮するために〜私達にできること〜"
       skills: 
         - "-"
-      description: "シン・ニホンを読んで、急激に変化していく社会を行きてゆく子どもたちに、私達は何ができるのか、自分なりの考えをまとめたスライドを作りました"
+      description: "「シン・ニホン」を読んで、同じように子育てをしている世代の人たちに何か伝えられないかと思い、スライドを作成しました。
+      急激に変化していく社会を行きてゆく子どもたちに、私達は何ができるのか、自分なりの考えをまとめています。"
       image_path: "images/kodomo.jpg"
       image_alt: "スライドのタイトルの図"
   - 
     - 
       title: "Nature"
-      description: "幼少期は、福島県の雄大な自然に囲まれて育ちました。ときに優しく、ときに厳しく、ときに恐ろしく、様々な表情を見せる自然。そんな自然がつくりだす、洗練された色や形や線にいつも憧れています。"
+      description: "幼少期は、福島県の雄大な自然に囲まれて育ちました。
+      ときに優しく、ときに厳しく、ときに恐ろしく、様々な表情を見せる自然。
+      そんな自然がつくりだす、洗練された色や形や線にいつも憧れています。"
       image_path: "images/nature.jpg"
       image_alt: "新芽が息吹く様子の写真"
     - 
       title: "Mom"
-      description: "2歳児の母親をしています。子育ては新しい発見の毎日、そして忍耐の毎日..."
+      description: "2歳児の母親をしています。子供から学ぶことが毎日たくさんあります。
+      子供と一緒に、自分も成長していきたいと思っている、今日このごろです。"
       image_path: "images/mom.jpg"
       image_alt: "赤ちゃんとお母さんの手の写真"
     - 
       title: "Life & Work"
-      description: "母親をしている自分、仕事をしている自分、自分自身でありたい自分。バランスを取るのに四苦八苦。より良いバランスを模索中です。"
+      description: "母親をしている自分、仕事をしている自分、自分自身でありたい自分。
+      バランスを取るのに四苦八苦。より自分にあった働き方を模索中です。"
       image_path: "images/work_and_life.jpg"
       image_alt: "ワークアンドライフの写真"
 
