@@ -20,15 +20,26 @@
 
 <body>
     <div class="content">
-        <div class="menu">
-            <ul>
-                <li><a data-scroll href="#">Top</a></li>
-                <li><a data-scroll href="#works">Works</a></li>
-                <li><a data-scroll href="#about">About</a></li>
-                <li><a data-scroll href="#contact">Contact</a></li>
 
-            </ul>
+        <!-- ヘッダー -->
+        <div id="header">
+            <nav class="menu">
+                <ul id="navi">
+                    <li><a data-scroll href="#">Top</a></li>
+                    <li><a data-scroll href="#works">Works</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#contact">Contact</a></li>
+
+                </ul>
+                <div class="nav_btn" id="nav_btn">
+                    <span class="hamburger_line hamburger_line1"></span>
+                    <span class="hamburger_line hamburger_line2"></span>
+                    <span class="hamburger_line hamburger_line3"></span>
+                </div>
+                <div class="nav_bg" id="nav_bg"></div>
+            </nav>
         </div>
+
         <!-- 本文 -->
         <header>
             <h1>Yayoi Ito</h1>
@@ -639,6 +650,27 @@
             © 2020 Yayoi Ito
         </footer>
     </div>
+
+    <script>
+        /* SP menu */
+        function toggleNav() {
+            var body = document.body;
+            var hamburger = document.getElementById('nav_btn');
+            var blackBg = document.getElementById('nav_bg');
+            var navi = document.getElementById('navi');
+
+            hamburger.addEventListener('click', function() {
+                body.classList.toggle('nav_open'); //メニュークリックでnav-openというクラスがbodyに付与
+            });
+            blackBg.addEventListener('click', function() {
+                body.classList.remove('nav_open'); //もう一度クリックで解除
+            });
+            navi.addEventListener('click', function() {
+                body.classList.remove('nav_open'); //もう一度クリックで解除
+            });
+        }
+        toggleNav();
+    </script>
 </body>
 
 </html>
