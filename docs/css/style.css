@@ -408,7 +408,7 @@ h3 {
        margin-top: 20px; 
        height: auto;
        padding: 0;
-       background-color: transparent;
+       background-color: rgba(255, 255, 255, 0.60);
     }
 
     #nav_btn {
@@ -421,15 +421,10 @@ h3 {
         position: fixed;
         right: 20px;
     }
-
     .menu ul li {
-        margin: 10px 20px;
-    }
-
-    .menu ul li a:hover{
-        text-decoration: none;
+        margin: 0 3px; 
+        padding: 5px 17px;
     }
 }
-
 @media screen and (min-width: 960px) {
 }
