@@ -1,6 +1,6 @@
 # portfolio
 
-* `ejs + json => index.html`
+* `ejs + (yaml => json) => index.html`
 * npmでインストールしたgulpでコンパイル
 
 ## 環境構築
