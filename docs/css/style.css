@@ -163,12 +163,21 @@ h3 {
 
 .profile div {
     text-align: center;
+    margin: 20px 0;
 }
 
 .profile p {
-    margin: 20px 0;
     text-align: left;
 }
+
+.contact {
+    margin:0 30px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
 
 
  footer {
