@@ -191,7 +191,6 @@ h3 {
 }
 
 .modal_content .item_name {
-    text-align: right;
     font-size: 10px;
     margin-bottom: 0;
 
@@ -389,6 +388,7 @@ h3 {
    }
 
    .modal_content .detail_item .item_name {
+       text-align: right;
        font-size: 12px;
        width: 80px;
    }
