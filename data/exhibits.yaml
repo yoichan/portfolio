@@ -72,7 +72,7 @@
         - "Cloud Firestore"
       link: "https://aremo-app.web.app"
       description: "普段の生活から出てきたアイディアを形にしました。設計から開発までを夫婦で行いました。近日リリース予定です。"
-      image_path: "images/aremo_lp.jpg"
+      image_path: "images/aremo_dev.jpg"
       image_alt: "買い物リストアプリ「Aremo」のLP画像"
     - 
       title: "医療機器メーカーで社内SEとして勤務"
